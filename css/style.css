@@ -1,0 +1,296 @@
+/* normalize css */
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;600&display=swap');
+
+body{
+	font-family: 'Sora', sans-serif;
+	box-sizing: border-box;
+}
+/* 
+// =================================================
+// * First part
+// ================================================= 
+*/
+.header{
+	background-color: #f1f1f1;
+	text-align: center;
+}
+.header h1 {
+	/* color:#bfa065; */
+	color:#f6f5f5;
+	text-shadow: 0 0 15px #bfa065;
+}
+.header .text_container{
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+	background-position: center;
+	color:#f6f5f5;
+	padding:5em;
+}
+.text_container p{
+	text-align: left;
+}
+.text_container a {
+	border: 2px solid #f6f5f5;
+	padding:10px 15px;
+	color:#f6f5f5;
+	text-decoration: none;
+	display: inline-block;
+}
+.cards_container{
+	padding:10px;
+	display: flex;
+	flex-direction: column;
+}
+.cards_container .card{
+	background-color: #fff;
+	padding:20px;
+	margin:15px;
+}
+.card .material-icons{
+	color:#bfa065;
+}
+
+/* 
+// =================================================
+// * Second part
+// ================================================= 
+*/
+.images_container{
+	text-align: center;
+	padding:20px;
+	
+
+}
+.text_images{
+	padding:10px 20px;
+}
+.images_container > div:last-child{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.images_container > div:last-child .image{
+	width: 100%;
+	max-width: 80%;
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+	padding: 10px;
+	margin:10px 0;
+}
+.images_container > div:last-child .image:nth-of-type(1){
+	background-image: url(../img/f1.jpg);	
+}
+.images_container > div:last-child .image:nth-of-type(2){
+	background-image: url(../img/f2.jpg);	
+}
+.images_container > div:last-child .image:nth-of-type(3){
+	background-image: url(../img/f3.jpg);	
+}
+.images_container > div:last-child .image:nth-of-type(4){
+	background-image: url(../img/f4.jpg);	
+}
+.images_container > div:last-child .image:nth-of-type(5){
+	background-image: url(../img/f5.jpg);	
+}
+.images_container > div:last-child .image:nth-of-type(6){
+	background-image: url(../img/f6.jpg);	
+}
+/* 
+// =================================================
+// * Third part
+// ================================================= 
+*/
+.columns_container{
+	background-color: #f1f1f1;
+	text-align: center;
+	padding: 20px;
+}
+.text_columsn{
+	padding:25px 0;
+}
+.columns_container > div:last-of-type{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.columns_container .col{
+	max-width: 80%;
+	
+}
+.columns_container .col p{
+	color:#808080;
+	text-align: left;
+}
+.columns_container .col h3{
+	text-align: left;
+}
+.columns_container a {
+	text-decoration: none;
+	color:#808080;
+	border:2px solid #bfa065;
+	border-radius: 20px;
+	padding:10px 25px;
+	display: inline-block;
+}
+/* 
+// =================================================
+// * Fourth part
+// ================================================= 
+*/
+.images_cols{
+	padding:20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap:10px;
+}
+.images_cols .card > div:last-child{
+	border:2px solid #bfa065;
+	padding:10px;
+	margin:10px 0;
+}
+.images_cols .card h3{
+	font-size: 20px;
+}
+.images_cols .card > div:first-of-type{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+}
+.images_cols .card:nth-of-type(1) > div:first-of-type{
+	background-image: url(../img/f7.jpg);
+}
+.images_cols .card:nth-of-type(2) > div:first-of-type{
+	background-image: url(../img/f8.jpg);
+}
+/* 
+// =================================================
+// * fifth part
+// ================================================= 
+*/
+.dessert{
+	/* padding:20px; */
+	background-color: #f1f1f1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.dessert > div:first-of-type{
+	width: 100%;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../img/f9.jpg);
+	margin-top:20px;
+}
+.dessert > div:last-of-type{
+	padding: 10px 20px;
+}
+/*
+// =================================================
+// * footer
+// =================================================
+*/
+footer{
+	background-color: #333333;
+	color:#bfa065;
+	padding:30px;
+	text-align: center;
+}
+
+/*
+// =================================================
+// * MEDIA QUERIES (1000PX)
+// =================================================
+*/
+@media screen and (min-width:1000px){
+	/* ##### header ############### */
+	.header .text_container {
+		text-align: left;
+	}
+	.header .text_container h1{
+		font-size: 3em;
+		text-align: left;
+	}
+	.header .text_container p{
+		max-width: 50%;
+	}
+
+	/* ##### cards ############### */
+	.cards_container {
+		flex-direction: row;
+		justify-content: center;
+		position: relative;
+		top:-50px;
+	}
+	.cards_container .card{
+		max-width: 250px;
+	}
+
+	/* ##### images  ############### */
+	.images_container div:last-of-type{
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap:20px;
+	}
+	.images_container div:last-of-type .image{
+		max-width: 300px;
+	}
+
+	/* ##### cols ############### */
+	.columns_container div:last-of-type{
+		flex-direction: row;
+		justify-content: center;
+		align-content: flex-start;
+		align-items: baseline;
+		gap:60px;
+		width:95%;
+		margin:0 auto;
+	}
+	.columns_container .col{
+		max-width: 400px;
+	}
+	/* ##### images cols ############### */
+	.images_cols {
+		flex-direction: row;
+		justify-content: center;
+	}
+	.images_cols .card{
+		display: flex;
+		align-items: stretch;
+		gap:20px;
+	}
+	
+	.images_cols .card > div:first-of-type{
+		height: 400px;
+		width: 300px;
+	}
+	.images_cols .card > div:last-child{
+		margin:0;
+		max-width: 300px;
+		line-height: 30px;
+	}
+
+	/* ##### dessert ############### */
+	.dessert{
+		flex-direction: row;
+	}
+}
+
+/*
+// =================================================
+// * MEDIA QUERIES (1000PX)
+// =================================================
+*/
+@media screen and (min-width:1200px){
+	.images_container div:last-of-type{
+		max-width: 1200px;
+		margin:0 auto;
+	}
+}
